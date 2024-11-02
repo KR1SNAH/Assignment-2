@@ -18,6 +18,11 @@ function palindrome()
 function palCheck()
 {
     let num = document.getElementById("pal").value;
+    if(num == "")
+    {
+        document.getElementById("pallabel").textContent = "";
+        return;
+    }
     let temp = parseInt(num);
     console.log(num);
     rev = 0;
